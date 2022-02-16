@@ -1,6 +1,6 @@
 /* font-family: 'Raleway', sans-serif; */
 
-*{margin:0;padding:0;box-sizing:border-box;color:#fff}
+*{margin:0;padding:0;box-sizing:border-box;color:hsl(243, 100%, 93%); font-family: 'Raleway', sans-serif; }
 
 html{
     background-color: #18181a;
@@ -8,8 +8,12 @@ html{
 
 body{
     height: 100vh;
+    font-size: 14px;    
 }
-
+main{
+    width: 100%;
+    flex-direction: column;
+}
 footer{
     position:absolute;
     bottom:5px;
@@ -22,6 +26,76 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.box{
+    margin-bottom: 20px;
+    width: 340px;
+    background-color: hsl(228, 56%, 26%);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.logo{
+    margin: 30px 0 0 30px;
+}
+.box_navContainer{
+    border-top-right-radius: 80px;
+}
+.navMenu{
+    /* width: 80%; */
+    margin: 0 0 15px 10px;
+    display:flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.navMenu__ico{
+    margin-right: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(229, 57%, 11%);
+    height: 46px;
+    width: 46px;
+    border-radius: 20%;
+}
+
+.spaceInfoContainer{
+    position: relative;
+}
+.currentDS__container{
+    width: 100%;
+    margin: 30px;
+    flex-direction: column;
+}
+.currentDS__info{
+    width: inherit;
+    text-align: center;
+}
+.currentDS__progresBarData__container{
+    width: 100%;
+    margin: 10px;
+}
+progress{
+    width: 100%;
+}
+.currentDS__progressBarData__info{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.leftDS__container{
+    background-color: #fff;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    bottom: -25px;
+}
+.leftDS__info{
+    color: #000;
+}
+.leftDS__info__space{
+    font-size: 2em;
+    color: inherit;
 }
 
 /* Utility Style */

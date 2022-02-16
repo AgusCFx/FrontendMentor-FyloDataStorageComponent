@@ -12,26 +12,33 @@
 </head>
 <body class="contentCenter">
   <div class="bodyContainer contentCenter">
-    <main>
-      <div class="navContainer">
-        <img src="images/logo.svg" alt="Logo Fylo">
+    <main class="contentCenter">
+      <!-- Contenedor de navegacion -->
+      <div class="navContainer box box_navContainer">
+        <img src="images/logo.svg" class="logo" alt="Logo Fylo">
         <div class="navMenu">
-          <div class="navMenu__ico"></div>
-          <div class="navMenu__ico"></div>
-          <div class="navMenu__ico"></div>
+          <a href="#"><div class="navMenu__ico"><img src="images/icon-document.svg" alt=""></div></a>
+          <a href="#"><div class="navMenu__ico"><img src="images/icon-folder.svg" alt=""></div></a>
+          <a href="#"><div class="navMenu__ico"><img src="images/icon-upload.svg" alt=""></div></a>
         </div>
       </div>
-      <div class="spaceInfoContainer">
-        <div class="currentDS__container">
-          <p class="currentDS__info">You’ve used 815 GB of your storage</p>
+
+      <!-- Informacion de espacio -->
+      <div class="spaceInfoContainer box contentCenter">
+        <div class="currentDS__container contentCenter">
+          <p class="currentDS__info">You’ve used <strong>815 GB</strong> of your storage</p>
           <div class="currentDS__progresBarData__container">
-            <div class="currentDS__progressBarData__progressbar"></div>
-            <div class="currentDS__progressBarData__start">0 GB</div>
-            <div class="currentDS__progressBarData__finish">1000 GB</div>
+            <div class="currentDS__progressBarData__progressbar">
+              <progress value="815" max="1000"></progress>
+            </div>
+            <div class="currentDS__progressBarData__info">
+              <div class="currentDS__progressBarData__start">0 GB</div>
+              <div class="currentDS__progressBarData__finish">1000 GB</div>
+            </div>
           </div>
         </div>
-        <div class="leftDS__container">
-          <p class="leftDS__info"><span>185 </span>GB Left</p>
+        <div class="leftDS__container contentCenter">
+          <p class="leftDS__info"><span class="leftDS__info__space">185 </span>GB Left</p>
         </div>
       </div>
     </main>
