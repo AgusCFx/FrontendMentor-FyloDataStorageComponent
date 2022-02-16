@@ -108,27 +108,31 @@ footer{
 }
 .leftDS__container{
     background-color: #fff;
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 60px;
     position: absolute;
-    bottom: -25px;
+    bottom: -30px;
     border-radius: 10px;
     vertical-align: middle;
 }
 .leftDS__info{
     color: #000;
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .leftDS__info__space{
     display: inline;
     color: inherit;
-    font-size: 2em;
+    font-size: 2.3em;
     color: inherit;
     font-weight: 700;
 }
 .leftDS__info__spaceType{
     display: inline;
     color: inherit;
+    margin: 5px;
 }
 
 /* Utility Style */
@@ -153,6 +157,9 @@ footer{
         height: 100vh;
         background-image: none;
         background-color: hsl(229, 57%, 11%);
+        background-image: url(images/bg-desktop.png);
+        background-position: bottom;
+        background-size: auto auto;
     }
     .spaceInfoContainer{
         width: 500px;
@@ -162,8 +169,18 @@ footer{
     }
     .leftDS__container{
         bottom: auto;
-        top: -20px;
+        top: -30px;
         right: 30px;
-        width: 120px;
+        /* width: 120px; */
+    }
+    .leftDS__container__triangle{
+        position:absolute;
+        width: 0;
+        height: 0;
+        bottom: -15px;
+        right: 0;
+        border-style: solid;
+        border-width: 0 25px 25px 0;
+        border-color: transparent #ffffff transparent transparent;
     }
 }
