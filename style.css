@@ -1,6 +1,4 @@
-/* font-family: 'Raleway', sans-serif; */
-
-*{margin:0;padding:0;box-sizing:border-box;color:hsl(243, 100%, 93%); font-family: 'Raleway', sans-serif; }
+*{margin:0;padding:0;box-sizing:border-box;color:hsl(243, 100%, 93%);font-family: 'Raleway', sans-serif;font-weight: 400;}
 
 html{
     background-color: #18181a;
@@ -75,9 +73,34 @@ footer{
     width: 100%;
     margin: 10px;
 }
-progress{
-    width: 100%;
+.currentDS__progressBarData__progressbar{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%);
 }
+.currentDS__progressBarData__progressbar__used{
+    width: 81%;
+    height: 16px;
+    margin-left: 2px;
+    border-radius: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
+}
+.currentDS__progressBarData__progressbar__endPoint{
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
 .currentDS__progressBarData__info{
     margin-top: 10px;
     display: flex;
@@ -89,12 +112,22 @@ progress{
     height: 50px;
     position: absolute;
     bottom: -25px;
+    border-radius: 10px;
+    vertical-align: middle;
 }
 .leftDS__info{
     color: #000;
+    font-size: 0.8em;
 }
 .leftDS__info__space{
+    display: inline;
+    color: inherit;
     font-size: 2em;
+    color: inherit;
+    font-weight: 700;
+}
+.leftDS__info__spaceType{
+    display: inline;
     color: inherit;
 }
 
@@ -108,3 +141,29 @@ progress{
 /* Code provided by Frontend-Mentor */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 900px) {
+    main{
+        flex-direction: row;
+        align-items: flex-end!important;
+        column-gap: 20px;
+    }
+    .bodyContainer{
+        width: 1440px;
+        height: 100vh;
+        background-image: none;
+        background-color: hsl(229, 57%, 11%);
+    }
+    .spaceInfoContainer{
+        width: 500px;
+    }
+    .currentDS__info{
+        text-align: left;
+    }
+    .leftDS__container{
+        bottom: auto;
+        top: -20px;
+        right: 30px;
+        width: 120px;
+    }
+}
